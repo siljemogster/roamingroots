@@ -1,0 +1,142 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-width: 300px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.nav-bar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: white;
+  padding: 12px 20px;
+  color: black;
+}
+
+.nav-link {
+  border-bottom: 3px solid #ef2b2b;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-left: 5px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  color: black;
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+li {
+  display: inline;
+}
+
+#check {
+  display: none;
+}
+@media (max-width: 970px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: black;
+    background-size: auto;
+    color: black;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+    color: black;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .header {
+    text-align: center;
+    color: black;
+  }
+}

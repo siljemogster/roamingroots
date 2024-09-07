@@ -140,3 +140,27 @@ li {
     color: black;
   }
 }
+
+
+#post-container {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#thumbs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.error {
+  padding: 1rem;
+  color: red;
+  border: 1px red solid;
+}

@@ -5,10 +5,10 @@ console.log(pathname);
 switch (pathname) {
   case "/":
   case "/index.html":
-    displayProducts();
+    displayPosts();
     console.log("home");
     break;
-  case "/product.html":
-    displayProduct();
+  case "/post.html":
+    displayPost();
     break;
 }

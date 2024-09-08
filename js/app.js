@@ -8,7 +8,7 @@ switch (pathname) {
     displayPosts();
     console.log("home");
     break;
-  case "/post.html":
+  case "/posts.html":
     displayPost();
     break;
 }

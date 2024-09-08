@@ -5,7 +5,7 @@ console.log(pathname);
 switch (pathname) {
   case "/":
   case "/index.html":
-    displayPosts(posts);
+    displayPosts();
     console.log("home");
     break;
   case "/posts.html":

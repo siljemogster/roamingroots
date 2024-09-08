@@ -16,7 +16,7 @@ export function displayPostThumbnails(targetElement, posts) {
   
   function createHtmlForMovieThumbnail(post) {
     const src =
-      movie.images?.[0]?.thumbnail || "https://placehold.co/600x400/EEE/31343C";
+      post.images?.[0]?.thumbnail || "https://placehold.co/600x400/EEE/31343C";
     const alt = post.images?.[0]?.alt || "No image available";
   
     const img = document.createElement("img");

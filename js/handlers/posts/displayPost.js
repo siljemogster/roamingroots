@@ -19,4 +19,4 @@ export async function displayPost() {
     displayMessage("error", "There was an error fetching the posts");
   }
 }
-console.log("post:", post); 
+console.log("post:", post);

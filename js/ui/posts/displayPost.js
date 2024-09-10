@@ -14,7 +14,7 @@ export function displayPost(post) {
       featured_media.src = post.link[0].src;
       featured_media.alt = post.title;
     } else {
-      featured_media.src = "path/to/default/image.jpg";
+      featured_media.src = "/wp-json/wp/v2/posts/?_embed";
       featured_media.alt = "Default Image";
     }
   

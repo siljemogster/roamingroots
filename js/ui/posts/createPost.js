@@ -1,9 +1,9 @@
 export function createPost(post) {
     console.log(post);
   
-    const { title, featured_media, excerpt, } = post;
+    const { title, featuredmedia, excerpt, } = post;
   
-    const featured_media = image[0].src;
+    const featurededia = image[0].src;
   
     const postElement = document.createElement("div");
     postElement.classList.add("post");
@@ -12,7 +12,7 @@ export function createPost(post) {
     postTitleElement.textContent = title;
   
     const featuredMediaElement = document.createElement("img");
-    imageElement.src = featured_media;
+    imageElement.src = featuredmedia;
     imageElement.alt = title;
   
     const postExcerptElement = document.createElement("p");

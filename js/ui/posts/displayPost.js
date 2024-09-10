@@ -11,7 +11,7 @@ export function displayPost(post) {
     const featured_media = document.createElement("img");
   
     if (post.links && post.featured_media.length > 0) {
-      featured_media.src = post.link[0].src;
+      featured_media.src = _embedded["wp:featuredmedia"]?.[0]?.media_details.sizes.large.source_url;
       featured_media.alt = post.title;
     } else {
       featured_media.src = "/wp-json/wp/v2/posts/?_embed";

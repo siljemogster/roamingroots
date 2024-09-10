@@ -4,6 +4,7 @@ export function displayMessage(
     messageType = "error"
   ) {
     const parent = document.querySelector(container);
+    
     parent.innerHTML = `<div class="message ${messageType}">${message}</div>`;
   }
   

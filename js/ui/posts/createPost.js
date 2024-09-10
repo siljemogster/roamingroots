@@ -18,13 +18,13 @@ export function createPost(post) {
     featuredMediaElement.alt = title.rendered;
   
     const postExcerptElement = document.createElement("p");
-    postExcerptElement.innerHTML = excerpt;
+    postExcerptElement.innerHTML = excerpt.rendered;
     postExcerptElement.classList.add("centered-text");
   
     const link = document.createElement("a");
     link.classList.add("link");
     link.textContent = "Read more";
-    link.href = `post.html?id=${id}`;
+    link.href = `post.html?id=${post.id}`;
   
     postElement.append(postTitleElement);
     postElement.append(featuredMediaElement);

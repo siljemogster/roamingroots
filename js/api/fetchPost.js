@@ -12,3 +12,5 @@ export async function fetchPost(id) {
 
   throw new Error("There was an error fetching the post with id: ${id}");
 }
+
+

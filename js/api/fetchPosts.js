@@ -8,5 +8,5 @@ export async function fetchPosts() {
     return results;
   }
 
-  throw new Error("There was an error fetching the blogposts");
+  throw new Error("There was an error fetching the blog posts");
 }

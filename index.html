@@ -49,6 +49,8 @@
                   background: #777; 
                   color: white; 
                   position: relative; 
+                  background-position: center;
+                  background-size: cover; 
               
               }
               .container {
@@ -76,7 +78,8 @@
   
           <div class="carousel-inner">
                
-              <div class="carousel-item active">
+              <div class="carousel-item active"
+              style="background-image:url(./images/iceland.jpg);">
                   <div class ="container">
                       <h1>Example Headline Blogpost</h1>
                       <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
@@ -106,7 +109,7 @@
           </a>
           
           <a href="#myCarousel"
-          class="carousel-control-prev" role="button"
+          class="carousel-control-next" role="button"
           data-slide="next">
           <span class="sr-only">Next</span>
           <span class="carousel-contol-next-icon" arian-hidden="true"></span>

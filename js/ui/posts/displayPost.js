@@ -8,14 +8,14 @@ export function displayPost(post) {
     const heading = document.createElement("h1");
     heading.innerText = post.title;
   
-    const image = document.createElement("img");
+    const featured_media = document.createElement("img");
   
-    if (post.links && post.images.length > 0) {
-      image.src = post.link[0].src;
-      image.alt = post.title;
+    if (post.links && post.featured_media.length > 0) {
+      featured_media.src = post.link[0].src;
+      featured_media.alt = post.title;
     } else {
-      image.src = "path/to/default/image.jpg";
-      image.alt = "Default Image";
+      featured_media.src = "path/to/default/image.jpg";
+      featured_media.alt = "Default Image";
     }
   
     const content = document.createElement("p");
@@ -23,7 +23,7 @@ export function displayPost(post) {
   
    
     container.append(heading);
-    container.append(link);
+    container.append(featured_media);
     container.append(content);
 
   }

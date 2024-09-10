@@ -1,9 +1,9 @@
 export function createPost(post) {
     console.log(post);
   
-    const { title, images , excerpt, } = post;
+    const { title, featured_media, excerpt, } = post;
   
-    const image = images[0].src;
+    const featured_media = image[0].src;
   
     const postElement = document.createElement("div");
     postElement.classList.add("post");
@@ -11,8 +11,8 @@ export function createPost(post) {
     const postTitleElement = document.createElement("h2");
     postTitleElement.textContent = title;
   
-    const imageElement = document.createElement("img");
-    imageElement.src = image;
+    const featuredMediaElement = document.createElement("img");
+    imageElement.src = featured_media;
     imageElement.alt = title;
   
     const postExcerptElement = document.createElement("p");
@@ -24,8 +24,8 @@ export function createPost(post) {
     link.textContent = "Read more";
     link.href = `post.html?id=${id}`;
   
-    postElement.append(movieTitleElement);
-    postElement.append(imageElement);
+    postElement.append(postTitleElement);
+    postElement.append(featuredMediaElement);
     postElement.append(postExcerptElement);
     postElement.append(link);
   

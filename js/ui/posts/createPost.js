@@ -1,9 +1,9 @@
 export function createPost(post) {
     console.log(post);
   
-    const { title, featuredmedia, excerpt, } = post;
+    const { title, image, excerpt, } = post;
   
-    const featurededia = image[0].src;
+    const featured_media = image[0].src;
   
     const postElement = document.createElement("div");
     postElement.classList.add("post");

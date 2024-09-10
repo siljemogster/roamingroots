@@ -1,10 +1,10 @@
-body {
+ body {
   font-family: "Roboto", sans-serif;
   background-color: white;
   color: black;
 }
 
-p {
+/* p {
   font-size: 18px;
   color: black;
   text-align: center;
@@ -13,23 +13,33 @@ p {
   min-width: 300px;
   padding: 20px;
 }
+  */
 
-h1 {
+/* h1 {
   text-align: center;
 }
+*/
 
 h3 {
   text-align: center;
 }
 
+/*
 div {
   display: flex;
   flex-wrap: wrap;
 }
 
-li {
+*/ 
+
+/*li {
   display: inline;
+
+  
 }
+
+*/ 
+
 
 .link {
   text-decoration: underline;
@@ -109,9 +119,13 @@ li {
   right: 20px;
 }
 
+/*
+
 li {
   display: inline;
 }
+
+*/
 
 #check {
   display: none;

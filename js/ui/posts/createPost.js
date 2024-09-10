@@ -3,7 +3,7 @@ export function createPost(post) {
   
     const { title, image, excerpt, } = post;
   
-    const featured_media = image[0].src;
+    const featured_media = _embedded["wp:featuredmedia"]?.[0]?.media_details.sizes.large.source_url;
   
     const postElement = document.createElement("div");
     postElement.classList.add("post");

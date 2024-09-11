@@ -1,5 +1,5 @@
 export function displayPost(post) {
-    document.title = `${post.title} | ${document.title}`;
+    document.title = `${post.title.rendered} | ${document.title.rendered}`;
   
     const container = document.querySelector("#post-container");
   

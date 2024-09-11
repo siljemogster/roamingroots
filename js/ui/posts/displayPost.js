@@ -16,13 +16,15 @@ export function displayPost(post) {
       featured_media.alt = post.title.rendered;
     
   
-    const content = document.createElement("p");
+    const content = document.createElement("pr");
     content.innerHTML = post.content.rendered;
+
   
    
     container.append(heading);
     container.append(featured_media);
     container.append(content);
+   
 
   }
   

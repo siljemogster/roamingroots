@@ -12,8 +12,8 @@ export async function handleDisplayPost() {
 
   try {
     const post = await fetchPost(id);
-    displayMovie(post);
+    displayPost(post);
   } catch (error) {
-    displayMessage("post-container", error.message, "error");
+    displayMessage("#post-container", error.message, "error");
   }
 }

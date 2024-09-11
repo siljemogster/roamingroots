@@ -1,7 +1,7 @@
 import { url } from "../constants.js";
 
 export async function fetchPost(id) {
-  const detailUrl = `${url}${id}`;
+  const detailUrl = `${url}${id}?_embed`;
 
   const response = await fetch(detailUrl);
 

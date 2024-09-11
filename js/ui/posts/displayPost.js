@@ -6,20 +6,18 @@ export function displayPost(post) {
     container.innerHTML = "";
   
     const heading = document.createElement("h1");
-    heading.innerText = post.title;
+    heading.innerText = post.title.rendered;
   
     const featured_media = document.createElement("img");
   
-    if (post.links && post.featured_media.length > 0) {
-      featured_media.src = _embedded["wp:featuredmedia"]?.[0]?.media_details.sizes.large.source_url;
-      featured_media.alt = post.title;
-    } else {
-      featured_media.src = "/wp-json/wp/v2/posts/?_embed";
-      featured_media.alt = "Default Image";
-    }
+
+      featured_media.src = post._embedded["wp:featuredmedia"]?.[0]?.media_details.sizes.large.source_url ||
+      "https://placehold.co/600x400";
+      featured_media.alt = post.title.rendered;
+    
   
     const content = document.createElement("p");
-    excerpt.innerHTML = post.content;
+    content.innerHTML = post.content.rendered;
   
    
     container.append(heading);

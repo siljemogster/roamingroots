@@ -380,5 +380,13 @@ form {
   padding: 100px; 
   max-width: 300px; 
   text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+  max-width: 500px; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  
 
 }

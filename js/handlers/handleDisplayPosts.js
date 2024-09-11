@@ -7,7 +7,6 @@ export async function handleDisplayPosts() {
   try {
     const posts = await fetchPosts();
     displayPosts(posts);
-    displayPostThumbnails("#thumbs-container", posts);
   } catch (error) {
     displayMessage("#posts-container", error.message);
   }

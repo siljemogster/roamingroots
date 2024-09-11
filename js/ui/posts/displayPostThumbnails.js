@@ -14,10 +14,10 @@ export function displayPostThumbnails(targetElement, posts) {
     });
   }
   
-  function createHtmlForMovieThumbnail(post) {
+  function createHtmlForPostThumbnail(post) {
     const src =
-      post.images?.[0]?.thumbnail || "https://placehold.co/600x400/EEE/31343C";
-    const alt = post.images?.[0]?.alt || "No image available";
+    _embedded["wp:featuredmedia"]?.[0]?.media_details.sizes.large.source_url ||
+    "https://placehold.co/600x400";
   
     const img = document.createElement("img");
     img.setAttribute("src", src);

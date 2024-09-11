@@ -164,14 +164,16 @@ li {
   max-height: 50px;
   margin: 0 auto;
   align-items: center;
+  text-align: center;
 }
 
 
 #posts-container {
   display: block;
-  max-width: 500px;
+  max-width: 70%;
   margin: 0 auto;
   align-items: center;
+  text-align: center;
 }
 
 #thumbs-container {
@@ -184,8 +186,68 @@ li {
   padding: 20px;
 }
 
+
+
 .error {
   padding: 1rem;
   color: red;
   border: 1px red solid;
+}
+
+.post {
+  border: 1px #ccc solid;
+  padding: 3rem;
+  margin: 3rem;
+  position: relative;
+  display: block; 
+  
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem;
+
+}
+
+.post p {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.post h2 {
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.post a {
+  max-width: 100%;
+  text-align: center;
+
+}
+
+.link {
+  display: inline-block; 
+  padding: 10px 20px;
+  margin-top: 15px; 
+  font-size: 16px;
+  background-color: #007bff; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  text-align: center;
+
+}
+
+.link:hover {
+  background-color: #0056b3; 
+  transition: background-color 0.3s;
+}
+
+.posts-container {
+
+ 
 }

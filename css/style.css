@@ -375,3 +375,10 @@ button:hover {
   color: red; 
   font-size: 12px; 
 }
+
+form {
+  padding: 100px; 
+  max-width: 300px; 
+  text-align: center;
+
+}

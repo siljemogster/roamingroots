@@ -42,11 +42,9 @@ li {
 }
 
 img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
-
 }
-
 
 .link {
   text-decoration: underline;
@@ -263,7 +261,6 @@ li {
   width: 100%;
   height: auto;
   display: block;
-
 }
 
 .cover-text {
@@ -328,6 +325,17 @@ li {
 
 .padding {
   padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .position {

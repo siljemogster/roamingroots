@@ -39,14 +39,14 @@
           <h1>Roaming Roots Blog</h1>
         </section>
         <section>
-          <h3>Latest posts</h3>
+          <h3>Latest blog posts</h3>
         </section>
       
   
           <style>
               .carousel-item {
                   height: 32rem; 
-                  background: #777; 
+                  background: #000; 
                   color: white; 
                   position: relative; 
                   background-position: center;
@@ -62,62 +62,114 @@
   
   
               }
-  
-  
-          </style>
-  
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#myCarousel"
-              data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel"
-                  data-slide-to="1" class="active"></li>
-              <li data-target="#myCarousel"
-              data-slide-to="2" class="active"></li>
-          </ol>
-  
-          <div class="carousel-inner">
-               
-              <div class="carousel-item active"
-              style="background-image:url(./images/iceland.jpg);">
-                  <div class ="container">
-                      <h1>Example Headline Blogpost</h1>
-                      <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
-                      <a href="#" class=".a.btn.btn-lg btn-primary">
-                          Sign up today
-                      </a>
-                  </div>
-              </div>
-              
-              <div class="carousel-item active">
-                  <div class ="container">
-                      <h1>Example Headline Blogpost</h1>
-                      <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
-                      <a href="#" class=".a.btn.btn-lg btn-primary">
-                          Sign up today
-                      </a>
-                  </div>
-              </div>
-  
-          </div>
-          <a href="#myCarousel"
-          class="carousel-control-prev" role="button"
-          data-slide="prev">
-          <span class="sr-only">Previous</span>
-          <span class="carousel-contol-prev-icon"
-            arian-hidden="true"></span>
-          </a>
-          
-          <a href="#myCarousel"
-          class="carousel-control-next" role="button"
-          data-slide="next">
-          <span class="sr-only">Next</span>
-          <span class="carousel-contol-next-icon" arian-hidden="true"></span>
-          </a>
+
+
+              .overlay-image {
+                position: absolute; 
+                bottom: 0;
+                left: 0;
+                right: 0; 
+                top: 0; 
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5; 
+
+
+              }
+
+              h2, p {
+                display: block; 
+                margin-bottom: 10px; 
+                width: 100%;
+                text-align: left;
+              }
 
     
-      </a>
-      </div>
+
+  
+          </style>
+          
+          <div id="myCarousel" class="carousel slide"
+          data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel"
+                data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel"
+                data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel"
+                data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel"
+                data-bs-slide-to="3"></li>
+             </ol>
+        
+             <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="overlay-image"
+                    style="background-image:url(./images/iceland.jpg);"></div>
+                    <div class ="container">
+                        <h2>Example Headline Blogpost</h1>
+                        <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
+                        <a href="#" class="btn btn-mg btn-primary">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                    style="background-image:url(./images/iceland.jpg);"></div>
+                    <div class ="container">
+                        <h2>Headline Blogpost</h1>
+                        <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
+                        <a href="#" class="btn btn-mg btn-primary">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                    style="background-image:url(./images/iceland.jpg);"></div>
+                    <div class ="container">
+                        <h2>Example Headline</h1>
+                        <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
+                        <a href="#" class="btn btn-mg btn-primary">
+                            Read more 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="overlay-image"
+                    style="background-image:url(./images/iceland.jpg);"></div>
+                    <div class ="container">
+                        <h2>Example Headline</h1>
+                        <p>This is where I can write about the excerpt of the blog post and whats interesting.</p>
+                        <a href="#" class="btn btn-mg btn-primary">
+                            Read more 
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+            <a href="#myCarousel"
+            class="carousel-control-prev" role="button"
+            data-bs-slide="prev">
+            <span class="sr-only"></span>
+            <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+        </a>
+        
+            <a href="#myCarousel"
+            class="carousel-control-next" role="button"
+            data-bs-slide="next">
+            <span class="sr-only"></span>
+            <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+        </a>
+    </a>
+</div>
   
   
 

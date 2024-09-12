@@ -64,6 +64,26 @@ img {
   color: black;
 }
 
+nav {
+  background-color: white;
+  overflow: hidden; 
+  color: black;
+}
+
+nav a {
+  float: left; 
+  display: block; 
+  color: black; 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none;
+  font-size: 17px; 
+}
+
+nav a:hover {
+  border-bottom: 3px solid #007bff; 
+}
+
 .nav-link {
   border-bottom: 3px solid #007bff;
 }
@@ -85,8 +105,7 @@ img {
   position: relative;
   text-transform: uppercase;
   font-weight: lighter;
-  padding-left: 10px;
-  padding-right: 20px;
+ 
 }
 
 .menu li a::after {
@@ -401,3 +420,24 @@ form {
   padding: 20px; 
   font-size: 13px;
 }
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

@@ -15,6 +15,11 @@ pr {
 
 p {
   text-align: center;
+  padding-left: 30px; 
+  padding-right: 30px; 
+  padding-top: 10px; 
+
+
 }
 
 h1 {
@@ -196,11 +201,12 @@ li {
   margin: 0 auto;
   align-items: center;
   text-align: center;
+   
 }
 
 #posts-container {
   display: block;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   align-items: center;
   text-align: center;
@@ -224,8 +230,8 @@ li {
 
 .post {
   border: 1px #ccc solid;
-  padding: 3rem;
-  margin: 3rem;
+  padding: 2rem;
+  margin: 2rem;
   position: relative;
   display: block;
 }
@@ -240,6 +246,7 @@ li {
   max-width: 100%;
   height: auto;
   text-align: center;
+ 
 }
 
 .post h2 {

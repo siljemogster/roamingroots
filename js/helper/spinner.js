@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
 
 
 
-    spinnerWrapperEl.style.opacity = '0';
+    spinnerWrapperEl.style.opacity = '1';
 
     setTimeout(() => {
         spinnerWrapperEl.style.display = 'none' ; 

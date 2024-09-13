@@ -30,9 +30,7 @@ export function createPost(post) {
     postElement.append(featuredMediaElement);
     postElement.append(postExcerptElement);
     postElement.append(link);
-  
-    // console.log(postElement);
-  
+
     return postElement;
 
 }

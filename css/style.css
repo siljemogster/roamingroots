@@ -527,3 +527,8 @@ p {
     width: 100%;
   }
 }
+
+#view-more-button {
+  display: block;
+  margin: 20px auto;
+}

@@ -21,4 +21,11 @@ export function displayPost(post) {
   container.append(heading);
   container.append(featured_media);
   container.append(content);
+
+  featured_media.addEventListener("click", () => {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = featured_media.src;
+  });
 }

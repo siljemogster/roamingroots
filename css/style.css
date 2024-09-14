@@ -4,18 +4,13 @@ body {
   color: black;
 }
 
-pr {
-  color: black;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  min-width: 300px;
-  padding: 20px;
-}
 
+h2,
 p {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
   text-align: center;
-  padding: 20px;
 }
 
 h1 {
@@ -25,9 +20,6 @@ h1 {
   margin-right: 20px;
 }
 
-h2 {
-  text-align: center;
-}
 
 h3 {
   text-align: center;
@@ -222,6 +214,8 @@ li {
   padding: 20px;
 }
 
+
+
 .error {
   padding: 1rem;
   color: red;
@@ -230,7 +224,7 @@ li {
 
 .post {
   border: 1px #ccc solid;
-  padding: 2rem;
+  padding: 1.5rem;
   margin: 2rem;
   position: relative;
   display: block;
@@ -239,7 +233,6 @@ li {
 .post img {
   max-width: 100%;
   height: auto;
-  margin-right: 1rem;
 }
 
 .post p {
@@ -456,14 +449,6 @@ form {
   opacity: 0.5;
 }
 
-h2,
-p {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: left;
-}
-
 .spinner-wrapper {
   background-color: white;
   position: fixed;
@@ -494,11 +479,6 @@ p {
   100% {
       transform: rotate(360deg);
   }
-}
-
-.spinner-border {
-  height: 60px;
-  width: 60px;
 }
 
 .featured-image {

@@ -1,20 +1,17 @@
 import { url } from "../constants.js";
 
-export async function fetchPosts() {
-  console.log("Fetching posts from URL:", `${url}?_embed`);
-  
+export async function fetchPosts(page = 1, perPage = 10) {
   try {
-    const response = await fetch(`${url}?_embed`);
-    console.log("Response status:", response.status);
+    const response = await fetch(
+      `${url}?_embed&page=${page}&per_page=${perPage}`
+    );
     
     if (response.ok) {
       const results = await response.json();
-      console.log("Fetched posts:", results);
-      return results;
+      const totalPages = parseInt(response.headers.get("x-wp-totalpages"), 10);
+      const totalPosts = parseInt(response.headers.get("x-wp-total"), 10);
+      return { posts: results, totalPages, totalPosts };
     } else {
-      console.error("Response not OK. Status:", response.status);
-      const errorText = await response.text();
-      console.error("Error response:", errorText);
       throw new Error(`HTTP error! status: ${response.status}`);
     }
   } catch (error) {

@@ -13,10 +13,9 @@ export async function displayPost() {
 
   try {
     const post = await fetchPost(id);
-    console.log(post);
     displayPost("#post-container", post);
   } catch (error) {
     displayMessage("error", "There was an error fetching the posts");
   }
 }
-console.log("post:", post);
+

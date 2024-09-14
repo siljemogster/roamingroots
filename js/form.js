@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let isValid = true;
         
-        // Name validation
+
         const name = document.getElementById('name').value.trim();
         if (name.length <= 5) {
             document.getElementById('nameError').textContent = 'Name must be more than 5 characters long.';
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('nameError').textContent = '';
         }
         
-        // Email validation
+    
         const email = document.getElementById('email').value.trim();
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (!emailPattern.test(email)) {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('emailError').textContent = '';
         }
         
-        // Subject validation
+     
         const subject = document.getElementById('subject').value.trim();
         if (subject.length <= 15) {
             document.getElementById('subjectError').textContent = 'Subject must be more than 15 characters long.';
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('subjectError').textContent = '';
         }
         
-        // Message validation
+    
         const message = document.getElementById('message').value.trim();
         if (message.length <= 25) {
             document.getElementById('messageError').textContent = 'Message content must be more than 25 characters long.';
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (isValid) {
-            // Form is valid, display success message
+       
             successMessage.textContent = 'Form submitted successfully!';
-            form.reset(); // Clear the form
+            form.reset(); 
             
-            // Hide success message after 5 seconds
+    
             setTimeout(() => {
                 successMessage.textContent = '';
             }, 5000);

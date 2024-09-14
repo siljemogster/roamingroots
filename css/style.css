@@ -15,7 +15,7 @@ pr {
 
 p {
   text-align: center;
-  padding: 20px; 
+  padding: 20px;
 }
 
 h1 {
@@ -123,6 +123,7 @@ nav a:hover {
 .menu li a:hover:after {
   width: 100%;
 }
+
 .open-menu,
 .close-menu {
   position: absolute;
@@ -150,6 +151,7 @@ li {
 #check {
   display: none;
 }
+
 @media (max-width: 970px) {
   .menu {
     flex-direction: column;
@@ -167,18 +169,22 @@ li {
     padding: 10px;
     transition: all 0.2s ease-in-out;
   }
+
   .menu li {
     margin-top: 40px;
     color: black;
   }
+
   .menu li a {
     padding: 10px;
   }
+
   .open-menu,
   .close-menu {
     display: block;
   }
-  #check:checked ~ .menu {
+
+  #check:checked~.menu {
     right: 0;
   }
 }
@@ -413,6 +419,7 @@ form {
 .logo {
   height: 60px;
   padding-left: 20px;
+  padding-top: 10px; 
 }
 
 .footer {
@@ -429,6 +436,7 @@ form {
   background-position: center;
   background-size: cover;
 }
+
 .container {
   position: absolute;
   bottom: 0;
@@ -530,8 +538,17 @@ p {
 
 #view-more-button {
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
+  background-color: #2a9d8f;
+  border: none;
+  padding: 10px 15px;
+
 }
+
+#view-more-button:hover {
+  background-color: #1a6158; 
+}
+
 
 .container-form {
   display: flex;
@@ -540,21 +557,25 @@ p {
   min-height: 100vh;
   padding: 20px;
 }
+
 .contact-form {
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   width: 100%;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
+
 .form-group label {
   display: block;
   margin-bottom: 5px;
 }
+
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -562,10 +583,12 @@ p {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
 .error-message {
   color: red;
   font-size: 0.8em;
 }
+
 .success-message {
   color: green;
   font-size: 0.9em;
@@ -573,3 +596,13 @@ p {
   margin-top: 20px;
 }
 
+#contactForm button {
+  background-color: #2a9d8f;  
+  color: white; 
+
+}
+
+#contactForm button:hover {
+  background-color: #1a6158; 
+  color: white;
+}

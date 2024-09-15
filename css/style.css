@@ -81,6 +81,7 @@ img {
   background-color: white;
   padding: 12px 20px;
   color: black;
+  margin: 0; 
 }
 
 nav {
@@ -110,6 +111,9 @@ nav a:hover {
 
 .menu {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
   width: 100%;
   overflow-x: hidden; 
 }
@@ -118,6 +122,7 @@ nav a:hover {
   padding-left: 5px;
   max-width: 100%;
   overflow-x: hidden;
+  margin-left: 20px; 
 }
 
 .menu li a {

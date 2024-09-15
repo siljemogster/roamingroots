@@ -617,3 +617,7 @@ form {
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+

@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let isValid = true;
         
-
         const name = document.getElementById('name').value.trim();
         if (name.length <= 5) {
             document.getElementById('nameError').textContent = 'Name must be more than 5 characters long.';
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('nameError').textContent = '';
         }
         
-    
         const email = document.getElementById('email').value.trim();
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         if (!emailPattern.test(email)) {
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('emailError').textContent = '';
         }
         
-     
         const subject = document.getElementById('subject').value.trim();
         if (subject.length <= 15) {
             document.getElementById('subjectError').textContent = 'Subject must be more than 15 characters long.';
@@ -35,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('subjectError').textContent = '';
         }
         
-    
         const message = document.getElementById('message').value.trim();
         if (message.length <= 25) {
             document.getElementById('messageError').textContent = 'Message content must be more than 25 characters long.';
@@ -48,8 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
        
             successMessage.textContent = 'Form submitted successfully!';
             form.reset(); 
-            
-    
+             
             setTimeout(() => {
                 successMessage.textContent = '';
             }, 5000);

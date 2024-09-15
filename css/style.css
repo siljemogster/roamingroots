@@ -4,31 +4,32 @@ body {
   color: black;
   width: 100%;
   overflow-x: hidden;
-  margin: 0; 
-  padding: 0; 
-  min-height: 100vh; 
-  display: flex; 
-  flex-direction: column; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto; 
+  flex: 1 0 auto;
 }
 
-.container, .container-fluid {
-  width: 100%; 
-  padding-right: 15px; 
-  padding-left: 15px; 
-  margin-right: auto; 
-  margin-left: auto; 
-  box-sizing: border-box; 
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
 }
 
 html {
   width: 100%;
   overflow-x: hidden;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -68,7 +69,7 @@ img {
   text-decoration: underline;
   padding-left: 100px;
   padding-right: 100px;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .nav-bar {
@@ -81,13 +82,13 @@ img {
   background-color: white;
   padding: 12px 20px;
   color: black;
-  margin: 0; 
+  margin: 0;
 }
 
 nav {
   background-color: white;
   overflow-x: hidden;
-  color: black; 
+  color: black;
 }
 
 nav a {
@@ -115,14 +116,14 @@ nav a:hover {
   align-items: center;
   margin-left: auto;
   width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .menu li {
   padding-left: 5px;
   max-width: 100%;
   overflow-x: hidden;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 .menu li a {
@@ -148,7 +149,7 @@ nav a:hover {
   background-color: white;
   color: black;
   transition: 0.15s ease-in-out;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .menu li a:hover:after {
@@ -210,9 +211,9 @@ li {
   }
 
   .menu li a {
-    padding: 20px; 
+    padding: 20px;
     overflow-x: hidden;
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .open-menu,
@@ -237,7 +238,7 @@ li {
 #post-container {
   display: block;
   max-width: 500px;
-  padding: 20px; 
+  padding: 20px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
@@ -246,7 +247,7 @@ li {
 #posts-container {
   display: block;
   max-width: 500px;
-  padding: 10px; 
+  padding: 10px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
@@ -343,7 +344,7 @@ li {
 @media (max-width: 768px) {
   .cover-text {
     font-size: 6vw;
-    max-width: 100%; 
+    max-width: 100%;
   }
 }
 
@@ -394,12 +395,11 @@ li {
 }
 
 @media (min-width: 768px) {
-    .padding {
-      padding-left: 70px;
-      padding-right: 70px;
-    }
-
-}
+  .padding {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}  
 
 .btn-container {
   display: flex;
@@ -464,7 +464,7 @@ form {
 .logo {
   height: 60px;
   padding-left: 10px;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .footer {
@@ -526,10 +526,10 @@ form {
 
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -592,13 +592,11 @@ form {
   background-color: #2a9d8f;
   border: none;
   padding: 10px 15px;
-
 }
 
 #view-more-button:hover {
-  background-color: #1a6158; 
+  background-color: #1a6158;
 }
-
 
 .container-form {
   display: flex;
@@ -647,17 +645,15 @@ form {
 }
 
 #contactForm button {
-  background-color: #2a9d8f;  
-  color: white; 
+  background-color: #2a9d8f;
+  color: white;
 }
 
 #contactForm button:hover {
-  background-color: #1a6158; 
+  background-color: #1a6158;
   color: white;
 }
 
 .styling {
   text-align: center;
 }
-
-

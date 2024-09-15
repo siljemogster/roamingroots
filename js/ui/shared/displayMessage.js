@@ -6,4 +6,3 @@ export function displayMessage(
     const parent = document.querySelector(container);
     parent.innerHTML = `<div class="message ${messageType}">${message}</div>`;
   }
-  

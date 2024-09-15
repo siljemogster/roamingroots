@@ -1,8 +1,6 @@
 export function createPost(post) {
     const { title, excerpt, _embedded, id } = post;
   
-    console.log(post);
-  
     const featured_media =
       _embedded["wp:featuredmedia"]?.[0]?.media_details.sizes.large.source_url ||
       "https://placehold.co/600x400";
@@ -32,5 +30,4 @@ export function createPost(post) {
     postElement.append(link);
 
     return postElement;
-
 }

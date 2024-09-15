@@ -22,7 +22,6 @@ export function getCart() {
   export function addItemToCart(item) {
     const cart = getCart();
     const excistingItem = cart.find((cartItem) => cartItem.id === item.id);
-    console.log("excistingItem", excistingItem);
   
     if (!existingItem) {
       cart.push({ ...item, quantity: 1 });

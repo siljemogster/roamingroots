@@ -9,6 +9,9 @@ let isLoading = false;
 let allPosts = [];
 
 export async function handleDisplayPosts() {
+  const viewMoreButton = document.getElementById("view-more-button");
+  viewMoreButton.style.display = "none";
+
   try {
     const { posts, totalPages: newTotalPages, totalPosts: newTotalPosts } = await fetchPosts(currentPage);
     totalPages = newTotalPages;

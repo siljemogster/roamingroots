@@ -191,6 +191,7 @@ li {
 #post-container {
   display: block;
   max-height: 50px;
+  max-width: 600px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
@@ -198,7 +199,7 @@ li {
 
 #posts-container {
   display: block;
-  max-width: 80%;
+  max-width: 600px;
   margin: 0 auto;
   align-items: center;
   text-align: center;

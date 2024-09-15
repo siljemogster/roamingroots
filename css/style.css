@@ -196,8 +196,8 @@ li {
 
 #post-container {
   display: block;
-  max-height: 50px;
-  max-width: 500px;
+  max-width: 100%;
+  padding: 20px; 
   margin: 0 auto;
   align-items: center;
   text-align: center;

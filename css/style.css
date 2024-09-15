@@ -93,7 +93,7 @@ nav a:hover {
 
 .menu {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden; 
 }
 
@@ -312,7 +312,7 @@ li {
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0.7);
+  text-shadow: 2px 2 px 4px rgba(0, 0, 0.7);
   text-align: center;
   width: calc(100% - 40px);
   padding: 0 20px;
@@ -321,6 +321,7 @@ li {
 @media (max-width: 768px) {
   .cover-text {
     font-size: 6vw;
+    max-width: 100%; 
   }
 }
 

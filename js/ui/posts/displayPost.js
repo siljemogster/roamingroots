@@ -15,7 +15,7 @@ export function displayPost(post) {
       .source_url || "https://placehold.co/600x400";
   featured_media.alt = post.title.rendered;
 
-  const content = document.createElement("pr");
+  const content = document.createElement("p");
   content.innerHTML = post.content.rendered;
 
   container.append(heading);

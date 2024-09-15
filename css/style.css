@@ -56,7 +56,7 @@ img {
 }
 
 .nav-bar {
-  max-width: 90%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,7 +191,7 @@ li {
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 970px) {
   .header {
     text-align: center;
     color: black;
@@ -200,7 +200,8 @@ li {
 
 #post-container {
   display: block;
-  max-width: 350px; 
+  max-width: 500px;
+  padding: 20px; 
   margin: 0 auto;
   align-items: center;
   text-align: center;

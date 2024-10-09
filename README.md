@@ -1,6 +1,6 @@
 # Roaming Roots
 
-![Roaming Roots Website](./images.RoamingRootsScreenShot.png)
+![Roaming Roots Website](./images/RoamingRootsScreenShot.png)
 
 Roaming Roots is a travel blog focused on uncovering hidden gems around the world, designed to inspire wanderlust and provide valuable travel tips.
 
